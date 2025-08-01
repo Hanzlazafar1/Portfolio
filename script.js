@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize typing animation
     const typedElement = document.getElementById('typed-text');
     if (typedElement) {
-        const texts = ['Software Engineer','AI Engineer','Agentic AI '];
+        const texts = ['Software Engineering Student','Generative AI','Agentic AI '];
         window.typingAnimation = new TypingAnimation(typedElement, texts);
     }
     
