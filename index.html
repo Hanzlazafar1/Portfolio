@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanzla Zafar - Portfolio</title>
+    <link rel="icon" type="image/png" href="profile-picture.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>  
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <span class="brand-text">Hanzla Zafar</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="nav-toggle" class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Hanzla</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span id="typed-text" class="typed-text"></span>
+                        <span class="cursor"></span>
+                    </div>
+                    <p class="hero-description">
+                        Software Engineering student with 2+ years of experience building intelligent systems 
+                        and AI-powered solutions that solve real-world problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="Resume(Hanzla Zafar).pdf" download>
+                    <button class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                     Download Resume
+                     </button>
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring">
+                            <img src="Profile picture (1).png" 
+                                 alt="Hanzla Zafar" class="profile-img">
+                        </div>
+                        <div class="floating-element floating-ai">AI</div>
+                        <div class="floating-element floating-rocket">🚀</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm <strong>Hanzla Zafar</strong> — a <strong>Software Engineer</strong> specializing in <strong>Generative AI</strong> and <strong>Agentic AI systems</strong>.
+                        I design and develop intelligent agents that can think, reason, and take action autonomously using cutting-edge LLMs. 
+                        My work blends <em>innovation with purpose</em> — from building adaptive AI workflows to creating goal-driven assistants that learn and evolve. Passionate about shaping the future of AI through automation, creativity, and intelligent autonomy.
+                    </p>  
+                </div>
+                
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="highlight-title">ML / DL</h3>
+                        <p class="highlight-description">Specializing in Machine Learning, Deep Learning, and intelligent model-driven systems.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="highlight-title">Data Science</h3>
+                        <p class="highlight-description">Advanced analytics ,NLP and Computer Vision Solutions</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="highlight-title">Generative AI</h3>
+                        <p class="highlight-description">Leveraging Generative AI to craft intelligent systems that imagine, create, and adapt.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="highlight-title">Agentic AI</h3>
+                        <p class="highlight-description">Forging AI agents that act independently, collaborate intelligently, and evolve over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Technologies and tools I use to bring ideas to life</p>
+            </div>
+            
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="machinelearning">Machine Learning</button>
+                <button class="filter-btn" data-filter="deeplearning">Deep Learning</button>
+                <button class="filter-btn" data-filter="generativeai">Generative AI</button>
+                <button class="filter-btn" data-filter="agenticai">Agentic AI</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">A showcase of my latest work in AI development and data science</p>
+            </div>
+            
+            <div class="projects-filter">
+                <div class="filter-label">
+                    <i class="fas fa-filter"></i>
+                    <span>Filter:</span>
+                </div>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="agenticai">Agentic AI</button>
+                <button class="filter-btn" data-filter="generativeai">Generative AI</button>
+                <button class="filter-btn" data-filter="deeplearning">Deep learning</button>
+                <button class="filter-btn" data-filter="machinelearning">Machine Learning</button>
+                 
+                
+                
+                 
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+            
+            <div class="projects-cta">
+    <a href="https://github.com/Hanzlazafar1?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-primary">View All Projects on GitHub</button>
+    </a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">My journey in software engineering and AI development</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">AI Intern </h3>
+                            <div class="timeline-company">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Devvibe
+                            </div>
+                            <div class="timeline-period">
+                                <i class="fas fa-calendar"></i>
+                                June 2024 - August 2024
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                    Contributed to building real-world GenAI products by integrating
+                     LLMs with external tools, APIs, and custom workflows.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Data Science Freelancer</h3>
+                            <div class="timeline-company">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Fiverr-Upwork
+                            </div>
+                            <div class="timeline-period">
+                                <i class="fas fa-calendar"></i>
+                                2023 - Present
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Delivered Generative AI and Agentic AI solutions for small to medium businesses.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Software Engineering Student</h3>
+                            <div class="timeline-company">
+                                <i class="fas fa-map-marker-alt"></i>
+                                University of Engineering and Technology,Taxila
+                            </div>
+                            <div class="timeline-period">
+                                <i class="fas fa-calendar"></i>
+                                2022 - 2026
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Pursuing Bachelor's in Software Engineering with focus on AI and machine learning. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications">
+                <h3 class="certifications-title">Certifications & Achievements</h3>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <h4 class="cert-title">Full Stack Data Scientist </h4>
+                        <p class="cert-issuer">Data Mentor</p>
+                        <p class="cert-year">2024</p>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <h4 class="cert-title">Machine Learning Specialization</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-year">2024</p>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <h4 class="cert-title">Generative AI</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-year">2025</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Sharing insights about AI development, machine learning, and modern software engineering
+                </p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                2025-04-15
+                            </div>
+                            <div class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                3 min read
+                            </div>
+                        </div>
+                        <div class="blog-decorations">
+                            <div class="blog-decoration blog-decoration-1"></div>
+                            <div class="blog-decoration blog-decoration-2"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-content">
+                        <h3 class="blog-title">LangGraph vs LangChain Agents: What's the Difference?</h3>
+                        <p class="blog-excerpt">
+                            If LangChain agents think, LangGraph agents plan — welcome to the evolution of reasoning in AI.
+                        </p>
+                        <a href="https://langgraphvslangchainagents.hashnode.dev/langgraph-vs-langchain-agents-whats-the-difference" class="blog-link">
+                            Read Article
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                2025-07-31
+                            </div>
+                            <div class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                3 min read
+                            </div>
+                        </div>
+                        <div class="blog-decorations">
+                            <div class="blog-decoration blog-decoration-1"></div>
+                            <div class="blog-decoration blog-decoration-2"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-content">
+                        <h3 class="blog-title">How I Built Dora – An AI Assistant That Sees with Your Webcam</h3>
+                        <p class="blog-excerpt">
+                            Why just talk to AI when it can see what you see? Meet Dora — the AI assistant with eyes.
+                        </p>
+                        <a href="https://langgraphvslangchainagents.hashnode.dev/how-i-built-dora-an-ai-assistant-that-sees-with-your-webcam" class="blog-link">
+                            Read Article
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                2025-08-05
+                            </div>
+                            <div class="blog-read-time">
+                                <i class="fas fa-clock"></i>
+                                6 min read
+                            </div>
+                        </div>
+                        <div class="blog-decorations">
+                            <div class="blog-decoration blog-decoration-1"></div>
+                            <div class="blog-decoration blog-decoration-2"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-content">
+                        <h3 class="blog-title">Why the Future of AI is Agentic, Not Just Generative</h3>
+                        <p class="blog-excerpt">
+                            Generative AI creates — but Agentic AI thinks, plans, and acts. That’s the future.
+                        </p>
+                        <a href="https://langgraphvslangchainagents.hashnode.dev/why-the-future-of-ai-is-agentic-not-just-generative" class="blog-link">
+                            Read Article
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+    <a href="https://langgraphvslangchainagents.hashnode.dev/" class="btn btn-primary">View All Articles</a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Say Hello</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3 class="contact-title">Get in Touch</h3>
+                        <p class="contact-description">
+                            I'm always open to discussing new opportunities, interesting projects, 
+                            and potential collaborations. Feel free to reach out through any of the channels below.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:hanzlazafar10@gmail.com" class="contact-method">
+                            <div class="contact-icon contact-icon-email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">hanzlazafar10@gmail.com</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/hanzlazafar07/" target="_blank" class="contact-method">
+                            <div class="contact-icon contact-icon-linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">Connect with me</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/Hanzlazafar1" target="_blank" class="contact-method">
+                            <div class="contact-icon contact-icon-github">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">View my projects</div>
+                            </div>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" 
+                                      placeholder="Tell me about your project or how I can help..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Hanzla Zafar</div>
+                    <p class="footer-tagline">Made with ❤️ by Hanzla Zafar</p>
+                </div>
+                
+                <div class="footer-copyright">
+                    © 2025 All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
